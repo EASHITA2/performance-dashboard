@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global reset & typography */
+body {
+  margin: 0;
+  @apply bg-neutral-900 text-white font-sans antialiased;
+}
+
+/* Scrollbar styling for large datasets */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #3a3a3a;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5c5c5c;
+}
+
+/* Utility for dashboard titles */
+h1,
+h2,
+h3 {
+  @apply font-bold text-white tracking-tight;
+}
+
+/* Canvas elements take full space */
+canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+}
